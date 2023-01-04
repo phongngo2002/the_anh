@@ -1,0 +1,115 @@
+.page-title {
+    color: #303039;
+}
+.form-exam {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hvexam{
+    padding: 10px;
+}
+
+.exam {
+    max-width: 340px;
+    min-height: 490px;
+    border-radius: 14px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hvexam:hover {
+    box-shadow: 2px 4px 14px 0px #00000040;
+    border-radius: 14px;
+
+}
+
+.hvexam:hover > .name-exam {
+    border-bottom: 1px solid #f27127;
+}
+
+.img-exam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-exam img {
+    max-width: 90%;
+    margin-top: 20px;
+}
+.name-exam {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 600;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin: 20px 0;
+}
+
+title-exam {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0 25px;
+}
+
+.go-exam {
+    font-size: 16px;
+    padding: 6px 33px;
+    color: #209956;
+    border: 1px solid #209956;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.go-exam:hover,
+.go-exam:focus {
+    color: #fff;
+    background-color: #209956;
+    cursor: pointer;
+}
+
+/* slide */
+.slick-slide {
+    padding: 5px 3px;
+}
+.slick-prev:before {
+    content: url(../img/training/arrow-left.png) !important;
+}
+.slick-next:before {
+    content: url(../img/training/arrow-right.png) !important;
+}
+.slick-initialized .slick-slide {
+    display: flex !important;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767.98px) {
+    .title-exam {
+        font-size: 0.12rem;
+        line-height: 0.16rem;
+        min-height: 0.2rem;
+    }
+    .img-exam img {
+        width: 60%;
+    }
+    .name-exam {
+        font-size: 0.18rem;
+        margin: 0.1rem 0;
+    }
+    .go-exam {
+        padding: 0.04rem 0.14rem;
+        font-size: 0.14rem;
+    }
+    .exam {
+        min-height: 3.8rem;
+        margin: 0 !important;
+    }
+}

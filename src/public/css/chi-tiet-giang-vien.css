@@ -1,0 +1,300 @@
+.info-title h2 {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    float: right;
+    margin-right: 140px;
+    margin-top: 20px;
+}
+
+.bg {
+    clear: both;
+}
+
+.form-teacher {
+    padding-bottom: 60px;
+}
+
+.section-info-teacher {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.form-img {
+    position: relative;
+}
+
+.img-teacher {
+    position: relative;
+    left: -40px;
+    top: -60px;
+}
+
+.name-img {
+    z-index: 1;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+    color: White;
+    opacity: 0.39;
+}
+
+.info-teacher {
+    margin: 0 auto;
+}
+
+.wp {
+    text-align: center;
+}
+
+.name-teacher {
+    display: inline-block !important;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #F27127;
+    margin: 40px;
+}
+
+.form-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 20px;
+    padding-right: 140px;
+    border-top: 1px solid #75818F;
+}
+
+.form-info:last-child {
+    border-bottom: 1px solid #75818F;
+}
+
+.form-info-left {
+    margin-right: 38px;
+}
+
+.form-info-right p {
+    margin: 0 !important;
+}
+
+.form-info-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: black;
+}
+
+.form-info-right p:nth-child(1) {
+    font-weight: 600;
+}
+
+
+/* Courses */
+.courses {
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+}
+
+.course {
+    width: 214px;
+    max-height: 161px;
+    background-color: #B99130;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 8px; */
+    position: relative;
+    color: #FFFFFF;
+    margin-right: 60px;
+}
+
+.img-1 {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -35px;
+}
+
+.img-2 {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -14px;
+}
+
+.course p {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 50px !important;
+    margin-bottom: 0px !important;
+}
+
+.course p1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+/* item */
+.name-course {
+    color: #303039;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 0;
+    margin-top: 40px !important;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 2px dashed #b99130;
+    padding: 16px 17px;
+    max-width: 350px;
+    min-height: 400px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.item .item-title h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    color: #303039;
+}
+
+.item-sub {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.item-sub span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.item .item-content p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+}
+
+.item-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-price span {
+    color: #f27127;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.item-price .btnBuy {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    background-color: #f27127;
+    border: none;
+    cursor: pointer;
+    border-radius: 13px;
+    padding: 4px 12px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #209956 !important;
+}
+
+
+@media screen and (max-width:767.98px) {
+    .info-title h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .section-info-teacher {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px;
+    }
+
+    .img-teacher {
+        left: 0;
+        top: 0;
+    }
+
+    .name-teacher {
+        margin: 20px;
+    }
+
+    .form-info {
+        padding-right: 0;
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .course {
+        grid-template: 0;
+        margin-right: 0;
+    }
+
+    .item-price span {
+        font-size: 16px;
+    }
+
+    .item-price .btnBuy {
+        font-size: 10px;
+        padding: 2px 13px;
+    }
+
+    .slick-initialized .slick-slide {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .section-info-teacher {
+        margin-top: 0;
+    }
+
+    .info-title h2 {
+        float: left;
+    }
+
+    .name-img {
+        font-size: 45px;
+        bottom: 20px;
+        left: 30px;
+    }
+}

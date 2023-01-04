@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: auto;
+  margin: 0;
+}
+
+.bg {
+  background-color: #EDEDE6;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ol,
+a,
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+  color: #303039;
+}
+
+.wrapper {
+  max-width: 1220px;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  */
+.page-title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #209956;
+  background-color: #fff;
+  border-bottom: 2px solid #edede6;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+/* nav-breadcrumbs*/
+.breadcrumbs-block {
+  font-weight: 400;
+  color: #303039;
+}
+
+.breadcrumbs-block .list-breadcrumbs {
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.breadcrumbs-block li {
+  position: relative;
+}
+
+.breadcrumbs-block li a,
+.breadcrumbs-block li span {
+  display: flex;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+
+.breadcrumbs-block li::marker {
+  font-size: 0px;
+}
+
+.breadcrumbs-block li:after {
+  content: "";
+  display: block;
+  width: 0;
+  border-right: 1px solid #d9d9d9;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.breadcrumbs-block li:last-child::after {
+  display: none;
+}
+
+/*  */
+.breadcrumbs-block {
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.breadcrumbs-block li {
+  padding-right: 11px;
+  margin-right: 14px;
+}
+
+.breadcrumbs-block li a,
+.breadcrumbs-block li span {
+  height: 24px;
+  padding-top: 4px;
+}
+
+.breadcrumbs-block li:first-child a {
+  width: 24px;
+  height: 24px;
+  padding-top: 0;
+}
+
+
+@media only screen and (max-width: 767.98px) {
+
+  .breadcrumbs-block li a,
+  .breadcrumbs-block li span {
+    font-size: 0.18rem !important;
+  }
+
+  .wrapper {
+    padding-bottom: 0;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  .page-introduce {
+    font-size: 0.12rem;
+    margin: 0 0 0.2rem;
+    line-height: 1.4;
+  }
+
+  .category-list {
+    grid-template-columns: auto !important;
+    gap: 0px !important;
+  }
+
+  .item {
+    padding: 0.1rem;
+    margin-left: 0.14rem !important;
+    margin-right: 0.14rem !important;
+    gap: 10px;
+  }
+
+  .btnMore {
+    padding: 0.02rem 0.14rem !important;
+    font-size: 0.12rem !important;
+  }
+
+  .item-content p {
+    font-size: 0.12rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.1rem !important;
+  }
+
+  .page-title {
+    font-size: 0.26rem !important;
+    padding-bottom: 0.03rem;
+    margin: 0.03rem 0;
+  }
+
+  /*  */
+  .breadcrumbs-block {
+    padding: 0.1rem 0;
+    font-size: 1.12rem;
+    line-height: 1.4;
+  }
+
+  .breadcrumbs-block li {
+    padding-right: 0.08rem;
+    margin-right: 0.08rem;
+  }
+
+  .breadcrumbs-block li:first-child a {
+    width: 0.18rem;
+    height: 0.18rem;
+    padding-top: 0;
+  }
+
+  .breadcrumbs-block li:after {
+    min-height: 0.14rem;
+    line-height: 1.5;
+  }
+
+  .breadcrumbs-block li a,
+  .breadcrumbs-block li span {
+    min-height: 0.14rem;
+    padding-top: 0.02rem;
+    line-height: 1.5;
+  }
+
+  main {
+    padding-bottom: 0.1rem !important;
+  }
+
+  .slick-dots li {
+    width: 0.2rem !important;
+    height: 0.2rem !important;
+  }
+}

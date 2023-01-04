@@ -1,0 +1,529 @@
+<link rel="stylesheet" href="css/chi-tiet-khoa-hoc.css">
+<script src="js/index.js"></script>
+{{!-- --}}
+<main>
+    <nav class="breadcrumbs-block">
+        <div class="wrapper">
+            <ol class="list-breadcrumbs">
+                <li><a class="trans" href="../../"></a></li>
+                <li><a href="../../tu-van">Tư vấn</a></li>
+                <li><span>Tư vấn BH con người</span></li>
+            </ol>
+        </div>
+    </nav>
+    <section class="section-khoa-hoc">
+        <div class="wrapper">
+            <h1 class="page-title">Tư vấn Bảo hiểm</h1>
+        </div>
+        <!--  -->
+        <div class="bg-wrapper">
+            <div class="wrapper wrapper_ds">
+                <span class="category-title">Tư vấn Bảo hiểm (1 khóa)</span>
+                <div class="form-detail">
+                    <section class="form-left">
+                        <div class="item">
+                            <div class="avt-item">
+                                <img src="img/training/tuvanbaohiem.png" alt="" />
+                            </div>
+                            <div class="">
+                                <div class="item-title">
+                                    <h2>TƯ VẤN BẢO HIỂM NHÂN THỌ</h2>
+                                </div>
+                                <div class="item-sub">
+                                    <span>14 Bài</span>
+                                    <span>4 Chương</span>
+                                    <span><svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.50783 11.6001L10.7959 13.6918C11.3981 14.0751 12.1349 13.5085 11.9765 12.7918L11.1049 8.85846L14.0127 6.20846C14.5436 5.72513 14.2583 4.80846 13.5611 4.75013L9.73423 4.40846L8.23676 0.691797C7.96737 0.0167969 7.04829 0.0167969 6.7789 0.691797L5.28142 4.40013L1.45455 4.7418C0.757309 4.80013 0.472076 5.7168 1.00293 6.20013L3.91072 8.85013L3.03917 12.7835C2.88071 13.5001 3.61756 14.0668 4.21972 13.6835L7.50783 11.6001Z"
+                                                fill="#FFB525" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span>100 Học viên</span>
+                                </div>
+                                <div class="item-content">
+                                    <p>Chuyên gia bảo hiểm: Nguyễn Lê Bá Phước</p>
+                                </div>
+                                <div class="item-price">
+                                    <span>3.000.000đ</span>
+                                    <button class="btnBuy">Mua khóa học</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="form-right">
+                        <ul class="tab-list">
+                            <li class="tab-item tab-active" onclick="chooseTab(0)">
+                                <a>Chương</a>
+                            </li>
+                            <li class="tab-item" onclick="chooseTab(1)">
+                                <a>Nhận xét</a>
+                            </li>
+                            <li class="tab-item" onclick="chooseTab(2)">
+                                <a>Cảm nhận của học viên</a>
+                            </li>
+                            <li class="tab-item" onclick="chooseTab(3)">
+                                <a>Tài liệu</a>
+                            </li>
+                        </ul>
+                        <!-- Modal -->
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <p class="modal-notification">
+                                    Thông báo <span class="close">&times;</span>
+                                </p>
+                                <p class="modal-text">Bạn không có quyền truy cập</p>
+                                <p class="modal-btn">
+                                    <a href="./lien-he" class="modal-contact">Liên hệ</a>
+                                    <a class="closeModal close">Thoát</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(0)">
+                                    Phần I: Nguyên lý cơ bản về bảo hiểm
+                                    <span class="number-courses">5 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a onclick="showModal()" id="btn_modal">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(1)">
+                                    Phần II: Pháp luật trong Kinh doanh bảo hiểm
+                                    <span class="number-courses">4 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(2)">
+                                    Phần III. Kiến thức về sản phẩm bảo hiểm
+                                    <span class="number-courses">3 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(3)">
+                                    Phần IV: Kiến thức y khoa về bảo hiểm
+                                    <span class="number-courses">2 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content hidden">
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(4)">
+                                    Phần I: Nguyên lý cơ bản về bảo hiểm
+                                    <span class="number-courses">5 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(5)">
+                                    Phần II: Pháp luật trong Kinh doanh bảo hiểm
+                                    <span class="number-courses">4 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(6)">
+                                    Phần III. Kiến thức về sản phẩm bảo hiểm
+                                    <span class="number-courses">3 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(7)">
+                                    Phần IV: Kiến thức y khoa về bảo hiểm
+                                    <span class="number-courses">2 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content hidden">
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(8)">
+                                    Phần I: Nguyên lý cơ bản về bảo hiểm
+                                    <span class="number-courses">5 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(9)">
+                                    Phần II: Pháp luật trong Kinh doanh bảo hiểm
+                                    <span class="number-courses">4 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(10)">
+                                    Phần III. Kiến thức về sản phẩm bảo hiểm
+                                    <span class="number-courses">3 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(11)">
+                                    Phần IV: Kiến thức y khoa về bảo hiểm
+                                    <span class="number-courses">2 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content hidden">
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(12)">
+                                    Phần I: Nguyên lý cơ bản về bảo hiểm
+                                    <span class="number-courses">5 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(13)">
+                                    Phần II: Pháp luật trong Kinh doanh bảo hiểm
+                                    <span class="number-courses">4 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(14)">
+                                    Phần III. Kiến thức về sản phẩm bảo hiểm
+                                    <span class="number-courses">3 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-show">
+                                <p class="title-courses" onclick="showContent(15)">
+                                    Phần IV: Kiến thức y khoa về bảo hiểm
+                                    <span class="number-courses">2 bài học
+                                        <img src="img/training/arrow-down.jpg" alt="arrow-down" /></span>
+                                </p>
+                                <div class="detail-course">
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 1: Nguyên lý bảo hiểm (P1)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 2: Nguyên lý bảo hiểm (P2)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 3: Nguyên lý bảo hiểm (P3)</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 4: Kiến thức Cơ bản về sản phẩm bảo
+                                            hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                    <p class="child-title-course">
+                                        <a class="lesson" onclick="showModal()">Bài 5: So sánh đặc điểm bảo hiểm nhân
+                                            thọ</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

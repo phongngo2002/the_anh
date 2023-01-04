@@ -1,0 +1,38 @@
+.page-title {
+    color: #303039;
+}
+
+.title-exam {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.bg {
+    background-color: #EDEDE6;
+    border-radius: 26px;
+    margin-bottom: 70px;
+}
+
+.exam {
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:767.98px) {
+    .title-exam{
+        font-size: 0.2rem;
+        margin-bottom: 14px;
+        line-height: 0.22rem;
+    }
+    .exam {
+        padding: 15px 0;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+}

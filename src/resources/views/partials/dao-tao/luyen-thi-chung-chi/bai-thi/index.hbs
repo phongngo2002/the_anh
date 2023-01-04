@@ -1,0 +1,269 @@
+<link rel="stylesheet" href="css/bai-thi.css">
+{{!-- --}}
+<main>
+    <nav class="breadcrumbs-block">
+        <div class="wrapper">
+            <ol class="list-breadcrumbs">
+                <li><a class="trans" href="../../"></a></li>
+                <li><a href="">Đào tạo</a></li>
+                <li><span>Bài thi</span></li>
+            </ol>
+        </div>
+    </nav>
+    <section class="section-exem">
+        <div class="wrapper">
+            <h1 class="title-exam">Bài thi luyện chứng chỉ</h1>
+            <div class="exam">
+                <div class="form-infor-exam">
+                    <div class="countdown">
+                        <p class="countdown__title">Thời gian còn lại</p>
+                        <p id="timer">01:00:00</p>
+                    </div>
+                    <div class="infor__exam">
+                        <p class="infor__exam__title">Bài thi luyện chứng chỉ</p>
+                        <p class="infor__exam__user">
+                            Số câu đã làm
+                            <span class="user" id="exam__number__done">0/10</span>
+                        </p>
+                        <p class="infor__exam__user">
+                            Thời gian: <span class="user">1 giờ</span>
+                        </p>
+                        <p class="infor__exam__user">
+                            Họ & tên: <span class="user">Phong</span>
+                        </p>
+                        <p class="infor__exam__user">
+                            Giới tính: <span class="user">Nam</span>
+                        </p>
+                    </div>
+                    <div class="submit-exam">
+                        <a class="submit" onclick="model_submit()"><i class="fa-solid fa-check-double"></i>Nộp bài</a>
+                        <a class="exit" href="">Thoát</a>
+                    </div>
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <p class="modal-notification">
+                                Xác nhận nộp bài <span class="close">&times;</span>
+                            </p>
+                            <p class="modal-text">
+                                Còn 4 câu chưa hoàn thành. Bạn chắc chắc muốn nộp bài ?
+                            </p>
+                            <p class="modal-btn">
+                                <button type="submit" class="modal-contact">
+                                    Xác nhận nộp
+                                </button>
+                                <a class="closeModal close">Quay lại</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-question" id="form-question-show">
+                    <div onclick="statExam()" class="btn-show" id="btn-show">
+                        <span>Bắt đầu làm bài thi</span>
+                    </div>
+                    <div class="form-question-hidden" id="form-question-hidden">
+                        <div class="slideshow-container">
+                            <!--  -->
+                            <div class="mySlides fade">
+                                <h4 class="name-question">
+                                    <span class="number-question">1. </span>Ai thong minh hon
+                                    hoc sinh lop 5?
+                                </h4>
+                                <div class="answers">
+                                    <form action="">
+                                        <input class="input-question" type="radio" id="question1" name="question1"
+                                            value="A" />
+                                        <label for="question1"> The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question2" name="question1"
+                                            value="B" />
+                                        <label for="question2">The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question3" name="question1"
+                                            value="C" />
+                                        <label for="question3">The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question4" name="question1"
+                                            value="D" />
+                                        <label for="question4">The Anh</label><br /><br />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="mySlides fade">
+                                <h4 class="name-question">
+                                    <span class="number-question">2. </span>Ai thong minh hon
+                                    hoc sinh lop 5?
+                                </h4>
+                                <div class="answers">
+                                    <form action="/action_page.php">
+                                        <input class="input-question" type="radio" id="question5" name="question2"
+                                            value="A" />
+                                        <label for="question5"> The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question6" name="question2"
+                                            value="B" />
+                                        <label for="question6">The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question7" name="question2"
+                                            value="C" />
+                                        <label for="question7">The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question8" name="question2"
+                                            value="D" />
+                                        <label for="question8">The Anh</label><br /><br />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="mySlides fade">
+                                <h4 class="name-question">
+                                    <span class="number-question">3. </span>Ai thong minh hon
+                                    hoc sinh lop 5?
+                                </h4>
+                                <div class="answers">
+                                    <form action="/action_page.php">
+                                        <input class="input-question" type="radio" id="question9" name="question3"
+                                            value="A" />
+                                        <label for="question9"> The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question10" name="question3"
+                                            value="B" />
+                                        <label for="question10">The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question11" name="question3"
+                                            value="C" />
+                                        <label for="question11">The Anh</label><br />
+                                        <input class="input-question" type="radio" id="question12" name="question3"
+                                            value="D" />
+                                        <label for="question12">The Anh</label><br /><br />
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">Câu trước</a>
+                            <a class="next" onclick="plusSlides(1)">Câu tiếp</a>
+                        </div>
+                        <br />
+
+                        <div class="tab-question" style="text-align: center">
+                            <span class="dot" onclick="currentSlide(1)">Câu 1</span>
+                            <span class="dot" onclick="currentSlide(2)">Câu 2</span>
+                            <span class="dot" onclick="currentSlide(3)">Câu 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    // question show
+    function statExam() {
+        // countdown timer
+        var myTimer;
+        myTimer = setInterval(myClock, 1000);
+        var c = 3600; //Initially set to 1 hour
+
+        function myClock() {
+            --c;
+            var seconds = c % 60;
+            var secondsInMinutes = (c - seconds) / 60;
+            var minutes = secondsInMinutes % 60;
+            var hours = (secondsInMinutes - minutes) / 60;
+            document.getElementById("timer").innerText =
+                hours + ":" + minutes + ":" + seconds;
+            if (c == 0) {
+                clearInterval(myTimer);
+            }
+        }
+        //show
+        document
+            .getElementById("form-question-hidden")
+            .classList.add("form-question-show");
+        document.getElementById("btn-show").classList.add("btn-hidden");
+    }
+    // end show
+
+    // end countdown
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    //
+    var a = document.querySelectorAll(".mySlides");
+    for (let index = 0; index < a.length; index++) {
+        const checked = document.getElementsByName(`question${index + 1}`);
+
+        checked.forEach((element) => {
+            element.addEventListener("change", () => {
+                document
+                    .getElementsByClassName("dot")
+                [index].classList.add("dot-clicked");
+            });
+        });
+    }
+
+    // Count exams checked
+    const inputs = document.getElementsByClassName("input-question");
+    let count = 0;
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener("change", (e) => {
+            count = 0;
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].type == "radio" && inputs[i].checked) {
+                    count += 1;
+                }
+            }
+
+            if (count > 0) {
+                document.querySelector(".modal-text").innerHTML =
+                    "  Còn " +
+                    count +
+                    "câu chưa hoàn thành. Bạn chắc chắc muốn nộp bài ?";
+            } else {
+                document.querySelector(".modal-text").innerHTML =
+                    "Bạn chắc chắc muốn nộp bài ?";
+            }
+
+            document.getElementById(
+                "exam__number__done"
+            ).innerHTML = `${count}/10`;
+        });
+    }
+    // Model submit
+
+    function model_submit() {
+        document.getElementById("modal").style.display = "block";
+    }
+    var btn = document.getElementById("btn_modal");
+    document
+        .getElementsByClassName("close")[0]
+        .addEventListener("click", () => {
+            document.getElementById("modal").style.display = "none";
+        });
+    document
+        .getElementsByClassName("close")[1]
+        .addEventListener("click", () => {
+            document.getElementById("modal").style.display = "none";
+        });
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>

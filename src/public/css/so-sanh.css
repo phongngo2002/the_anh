@@ -1,0 +1,26 @@
+.compare__title{
+    text-align: center  ;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 24px 0;
+    border-bottom: 2px solid #EDEDE6;
+    margin-bottom: 15px;
+}
+
+.compare__menu {
+    display: flex;
+    gap    : 20px;
+}
+
+.compare__menu__title {
+    padding: 12px 20px;
+    background: #EDEDE6;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.compare__menu__icon__drop{
+    padding: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}

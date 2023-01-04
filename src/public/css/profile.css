@@ -1,0 +1,141 @@
+main {
+    background: #ccc;
+}
+
+.profile {
+    display       : flex;
+    gap           : 20px;
+    padding-bottom: 100px;
+}
+
+.profile__title {
+    text-align : center;
+    font-size  : 40px;
+    font-weight: normal;
+    padding    : 25px 0;
+}
+
+.profile-left,
+.profile-right {
+    background: #fff;
+    padding   : 30px;
+}
+
+.profile__left__wrapper,
+.profile__right__wrapper {
+    align-items   : flex-start;
+    display       : flex;
+    flex-direction: column;
+}
+
+.profile-left {
+    width: 50%;
+}
+
+.profile-right {
+    width: 50%;
+}
+
+.profile__text {
+    font-size  : 20px;
+    font-weight: 500;
+    color      : #209956;
+}
+
+.profile__text span,
+.profile__text a {
+    color: #000;
+}
+
+.profile__avatar {
+    width        : 120px;
+    border-radius: 50%;
+}
+
+.profile__name__input {
+    border       : 1px solid #ccc;
+    padding      : 6px 8px;
+    background   : #ccc;
+    width        : 300px;
+    border-radius: 5px;
+    outline: none !important;
+}
+
+.profile__name__input::placeholder{
+    width: 100px;
+}
+
+/*  */
+
+.profile__left__footer,
+.profile__right__footer {
+    border-top     : 1px solid #ccc;
+    margin-top     : 30px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 30px;
+}
+
+.profile__left__footer {
+    display: none;
+}
+
+.profile__btn {
+    margin-top   : 20px;
+    font-size    : 20px;
+    font-weight  : 600;
+    padding      : 2px 20px;
+    border-radius: 5px;
+    cursor       : pointer;
+}
+
+.profile__btn_save {
+
+    background: #fff;
+    color     : #209956;
+    border    : 2px solid #209956;
+}
+
+.profile__btn_save:hover {
+    background: #209956;
+    color     : #fff;
+}
+
+.profile__btn_cancel {
+    border: 2px solid #ccc;
+    color : #ccc;
+}
+
+.profile__btn_cancel:hover {
+    color     : #fff;
+    background: #ccc;
+}
+
+/* pro__right */
+.profile__courses a,
+.profile__exam a {
+    text-decoration: underline;
+}
+
+.profile-right {
+    align-items: flex-start;
+}
+
+.pw__change {
+    font-size  : 25px;
+    font-weight: 500;
+}
+
+.pw__text {
+    font-size  : 16px;
+    font-weight: 500;
+}
+
+.pw__input {
+    outline      : none;
+    border       : 1px solid #000;
+    padding      : 10px 16px;
+    width        : 100%;
+    border-radius: 5px;
+}

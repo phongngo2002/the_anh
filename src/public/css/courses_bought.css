@@ -1,0 +1,58 @@
+main{
+    min-height: 65vh;
+}
+
+.cbought-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+.courses {
+    padding-bottom: 40px;
+}
+
+.cbought__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    padding: 25px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    font-size: 18px;
+    border: 1px #ccc solid !important;
+    padding: 10px !important;
+}
+
+td a {
+    text-decoration: underline;
+}
+
+td a:hover {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 769.99px) {
+    .cbought-title {
+        font-size: 0.22rem;
+    }
+
+    .courses {
+        padding-bottom: 0.3rem;
+    }
+
+    td,
+    th {
+        font-size: 0.12rem !important;
+        padding: 0.04rem !important;
+    }
+
+}

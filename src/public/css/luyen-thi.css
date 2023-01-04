@@ -1,0 +1,255 @@
+/* slick arrow */
+.slick-next:before,
+.slick-prev:before {
+    color: #209956 !important;
+}
+
+/*  */
+.wrapper {
+    max-width: 1220px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-wrapper {
+    padding: 0 30px;
+}
+
+.page-title {
+    color: #303039;
+}
+
+.content__title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 25px;
+}
+
+.tab-list {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-bottom: 50px;
+}
+
+.tab-list li {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 5px 30px;
+}
+
+.view-all {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0;
+    padding: 0 25px;
+}
+
+.view-all a:hover {
+    text-decoration-line: underline;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.tab-active {
+    border-bottom: 4px solid #209956;
+}
+
+.content-tab {
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/*===== MODAL====== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #35383c;
+}
+
+.modal-content {
+    width: 550px;
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-notification {
+    font-size: 22px;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #edede6;
+    padding: 15px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.modal-text {
+    font-size: 20px;
+    margin: 0 !important;
+    border-bottom: 1px solid #edede6;
+    padding: 18px;
+    font-weight: 500;
+}
+
+.modal-btn {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.modal-contact {
+    color: #fff;
+    padding: 8px 12px;
+    background-color: #00a885;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.closeModal {
+    color: #fff;
+    padding: 8px 12px;
+    background-color: #6c757d;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.room {
+    width: 232px;
+    height: 327px;
+    border: 1px solid #edede6;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.room:hover {
+    box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.15);
+}
+
+.img-room {
+    width: 100%;
+    height: 204px;
+}
+
+.name-room {
+    font-size: 20px;
+}
+
+.go-room {
+    font-size: 16px;
+    padding: 6px 33px;
+    color: #209956;
+    border: 1px solid #209956;
+    border-radius: 8px;
+}
+
+.go-room:hover,
+.go-room:focus {
+    color: #fff;
+    background-color: #209956;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 677.98px) {
+    .content {
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 0.2rem;
+        padding: 0 0.1rem;
+    }
+
+    .name-room {
+        font-size: 0.12rem;
+        margin: 0.1rem 0 !important;
+    }
+
+    .go-room {
+        font-size: 0.1rem;
+        padding: 0.06rem 0.2rem;
+        margin-bottom: 20px !important;
+    }
+
+    .room {
+        width: 2.6rem;
+        height: auto;
+        padding-bottom: 0.15rem;
+    }
+
+    .img-room {
+        height: auto;
+    }
+
+    .form-wrapper {
+        padding: 0;
+    }
+
+    .tab-list li {
+        font-size: 0.1rem;
+        line-height: 20px;
+        padding: 5px 8px;
+    }
+
+    .tab-list {
+        margin-bottom: 10px;
+    }
+
+    .breadcrumbs-block li a,
+    .breadcrumbs-block li span {
+        font-size: 0.16rem !important;
+    }
+
+    /* MODAL */
+    .modal-content {
+        width: 300px;
+        padding-top: 200px;
+    }
+
+    .modal-notification {
+        font-size: 18px;
+    }
+
+    .modal-text {
+        font-size: 16px;
+    }
+
+    .modal-btn a {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,53 @@
+main{
+    min-height: 69vh;
+}
+
+.history {
+    display       : flex;
+    gap           : 20px;
+    padding-bottom: 40px;
+}
+
+.history__title {
+    text-align : center;
+    font-size  : 40px;
+    font-weight: normal;
+    padding    : 25px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width          : 100%;
+}
+
+td,
+th {
+    font-size: 18px;
+    border : 1px #ccc solid !important;
+    padding: 10px !important;
+}
+
+.pass {
+    color: #209956;
+}
+
+.fail {
+    color: red;
+}
+
+@media only screen and (max-width: 769.99px) {
+    .history__title {
+        font-size: 0.22rem;
+    }
+
+    .history {
+        padding-bottom: 0.3rem;
+    }
+
+    td,
+    th {
+        font-size: 0.12rem !important;
+        padding: 0.04rem !important;
+    }
+
+}

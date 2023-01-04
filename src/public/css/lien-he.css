@@ -1,0 +1,172 @@
+.container1 {
+    background: #209956;
+    margin-bottom: 200px;
+}
+
+.bg-wrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.say-hi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    gap: 10px;
+}
+
+.say-hi h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.say-hi p {
+    text-align: center;
+    max-width: 515px;
+}
+
+.say-hi a {
+
+    border: 1px solid white;
+    color: white;
+    padding: 8px 33px;
+    border-radius: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.say-hi a:hover {
+    background-color: white;
+    color: #209956;
+    transition: 0.5s all;
+}
+
+.form-contact {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EDEDE6;
+    padding: 35px 39px;
+    border-radius: 22px;
+    width: 100%;
+}
+
+.form-contact h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 20px;
+}
+
+.form-contact p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    margin: 0;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-input input {
+    padding: 8px 12px;
+    background: #FFFFFF;
+    border: 1px solid #75818F;
+    border-radius: 13px;
+    width: 100%;
+    outline: none;
+}
+
+.form-input input::placeholder {
+    color: #75818F;
+}
+
+.form-contact button {
+    padding: 8px 33px;
+    background: #FFFFFF;
+    border: 1px solid #209956;
+    border-radius: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #209956;
+    margin-top: 20px;
+}
+
+.form-contact button:hover {
+    color: white;
+    background: #209956;
+    transition: 0.5s all;
+}
+
+@media screen and (max-width:767.98px) {
+    .bg-wrapper {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .say-hi h1 {
+        font-size: 0.2rem;
+    }
+
+    .say-hi a {
+        font-size: 0.16rem;
+        padding: 0.1rem 0.24rem;
+    }
+
+    .say-hi p {
+        font-size: 0.14rem;
+    }
+
+    .form-contact h2 {
+        font-size: 0.16rem;
+    }
+
+    .form-contact {
+        padding: 20px 0;
+    }
+
+    .form-contact p {
+        font-size: 0.16rem;
+        margin: 0.1rem 0 !important;
+    }
+
+    .form-input input {
+        font-size: 0.12rem;
+        width: 80%;
+        padding: 0.06rem 0.16rem;
+    }
+
+    .form-input input::placeholder {
+        font-size: 0.12rem;
+    }
+
+    .form-contact button {
+        font-size: 0.13rem;
+        padding: 0.03rem 0.23rem;
+    }
+
+    .bg-wrapper {
+        padding: 30px 0;
+    }
+
+    .container1 {
+        margin-bottom: 50px;
+    }
+}

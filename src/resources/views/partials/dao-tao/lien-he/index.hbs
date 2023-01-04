@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="css/lien-he.css">
+{{!-- --}}
+<main>
+    <form action="" method="POST">
+        <div class="container1">
+            <div class="wrapper">
+                <div class="bg-wrapper">
+                    <div class="say-hi">
+                        <h1>Chào mừng bạn đến với VIS!</h1>
+                        <p>
+                            Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin
+                            cá nhân của bạn
+                        </p>
+                        <a class="login" href="/dang-nhap">Đăng nhập</a>
+                    </div>
+
+                    <div class="form-contact">
+                        <h2>Liên hệ</h2>
+                        <p>Gửi tin nhắn tới chúng tôi</p>
+                        {{!-- <span style="color: green;margin: 0 2px">{{\Illuminate\Support\Facades\Session::get('success')}}</span> --}}
+                        <div class="form-input">
+                            <input type="text" name="name" id="name" placeholder="Họ tên" spellcheck="false" />
+                            {{!-- <span style="color: red;margin: 0 4px">{{$message}}</span> --}}
+                            <input type="text" name="phone_number" placeholder="Số điện thoại" spellcheck="false" />
+                            {{!-- <span style="color: red;margin: 0 4px">{{$message}}</span> --}}
+                            <input type="text" name="email" placeholder="Email" spellcheck="false" />
+                            {{!-- <span style="color: red;margin: 0 4px">{{$message}}</span> --}}
+                            <input type="text" name="message" placeholder="Tin nhắn của bạn" spellcheck="false" />
+                            {{!-- <span style="color: red;margin: 0 4px">{{$message}}</span> --}}
+                        </div>
+                        <button style="cursor: pointer" type="submit">Gửi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
