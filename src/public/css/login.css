@@ -7,6 +7,10 @@ ul {
     list-style: none;
 }
 
+header, footer{
+    display: none;
+}
+
 
 *,
 html {
@@ -87,7 +91,6 @@ label {
 input {
     padding: 20px 50px 10px 10px;
     outline: none;
-    /* border-radius: 8px; */
     border: none;
     border-bottom: 3px solid #ccc;
 }
@@ -176,8 +179,7 @@ p:hover a {
 }
 
 .text_fp {
-    padding-left: 390px;
-    padding-right: 222px;
+    padding-left: 180px;
 }
 
 .forgot_pw {
@@ -186,6 +188,7 @@ p:hover a {
     font-weight: 600;
     font-size: 12px;
     padding-top: 20px;
+    padding-bottom: 20px;
     text-decoration: none !important;
 }
 

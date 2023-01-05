@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="css/luyen-thi.css">
+{{!--  --}}
+    <main>
+        <nav class="breadcrumbs-block">
+            <div class="wrapper">
+                <ol class="list-breadcrumbs">
+                    <li><a class="trans" href="/"></a></li>
+                    <li><a href="/dao-tao">Đào tạo</a></li>
+                    <li><span>Luyện thi chứng chỉ</span></li>
+                </ol>
+            </div>
+        </nav>
+        <section class="section-luyen-thi">
+            <div class="wrapper">
+                <h1 class="page-title">Luyện thi chứng chỉ</h1>
+            </div>
+            <div class="wrapper">
+                <div class="form-wrapper">
+                    <ul class="tab-list">
+                        @foreach($certificates as $cer)
+                            @if((int)$loop->iteration === 1)
+                                <li class="tab-item tab-active" onclick="chooseTab(0)">
+                                    <a>{{$cer['title']}}</a>
+                                </li>
+                            @else
+                                <li class="tab-item" onclick="chooseTab({{$loop->iteration -1}})">
+                                    <a>{{$cer['title']}}</a>
+                                </li>
+                            @endif
+                        @endforeach
+
+                    </ul>
+                    @foreach($certificates as $cer)
+                        @if((int)$loop->iteration === 1)
+                            <div class="content">
+                                @foreach($cer['exams'] as $exam)
+                                    <p class="content__title">{{$exam['title']}}</p>
+                                    <div class="content-tab">
+                                        @foreach($exam['child_exam'] as $child)
+                                            <div class="room">
+                                                <img class="img-room" src="{{$child['img']}}" alt="">
+                                                <p class="name-room">{{$child['title']}}</p>
+                                                @if(in_array($cer['_id'],$currentCer) && \Illuminate\Support\Facades\Auth::user())
+                                                    <a href="{{route('front_end_baithi',['exam_id' => $exam['_id'],'child_exam_id' => $child['_id']])}}"
+                                                       class="go-room" id="btn_modal"
+                                                    >Vào thi</a>
+                                                @else
+                                                    <a
+                                                       class="go-room" id="btn_modal"
+                                                       onclick="showModal()"  >Vào thi</a>
+                                                @endif
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                    <div class="view-all">
+                                        <a href="{{route('front_end_luyenthi_all',['exam_id' => $exam['_id']])}}">Xem
+                                            tất cả</a>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @else
+                            <div class="content hidden">
+                                @foreach($cer['exams'] as $exam)
+                                    <p class="content__title">{{$exam['title']}}</p>
+                                    <div class="content-tab">
+                                        @foreach($exam['child_exam'] as $child)
+                                            <div class="room">
+                                                <img class="img-room" src="{{$child['img']}}" alt="">
+                                                <p class="name-room">{{$child['title']}}</p>
+                                                @if(in_array($cer['_id'],$currentCer) && \Illuminate\Support\Facades\Auth::user())
+                                                    <a href="{{route('front_end_baithi',['exam_id' => $exam['_id'],'child_exam_id' => $child['_id']])}}"
+                                                       class="go-room" id="btn_modal"
+                                                    >Vào thi</a>
+                                                @else
+                                                    <a
+                                                       class="go-room" id="btn_modal"
+                                                       onclick="showModal()" >Vào thi</a>
+                                                @endif
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                    <div class="view-all">
+                                        <a href="{{route('front_end_luyenthi_all',['exam_id' => $exam['_id']])}}">Xem
+                                            tất cả</a>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p class="modal-notification">
+                Thông báo <span class="close">&times;</span>
+            </p>
+            <p class="modal-text">Bạn không có quyền truy cập</p>
+            <p class="modal-btn">
+                <a class="modal-contact"
+                   href="{{route('front_end_lienhechungchi')}}">Liên
+                    hệ</a>
+                <a class="closeModal close">Thoát</a>
+            </p>
+        </div>
+    </div>

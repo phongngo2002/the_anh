@@ -1,7 +1,7 @@
 class LuyenthiController {
     // [Get] /news
     index(req, res) {
-      res.render("partials/dao-tao/luyen-thi-chung-chi", {title : 'Luyện tchuwungws ch'});
+      res.render("partials/dao-tao/luyen-thi-chung-chi/chi-tiet", {title : 'Luyện thi chứng chỉ'});
     }
     // [GET] /news/:slug
     // show()
